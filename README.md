@@ -9,6 +9,7 @@ This repository contains Terraform code to deploy an **Amazon EKS (Elastic Kuber
 
 ## Project Structure
 
+```
 aws-eks-terraform
 │
 ├── terraform/
@@ -19,6 +20,7 @@ aws-eks-terraform
 └── kubernetes/
      ├── outputs.tf    # Kubernetes outputs
      └── k8s.tf        # Kubernetes provider, cluster auth, deployment and service
+```
 
 ## Features
 
@@ -39,7 +41,6 @@ aws-eks-terraform
 
 - **IAM User Access**
   - ***Provide the eks_admin_user_arn variable if prompted (your IAM user ARN)***
-  - Updates `aws-auth` ConfigMap automatically
 
 - **Terraform Modules**
   - [`terraform-aws-modules/vpc/aws`](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest) for networking
