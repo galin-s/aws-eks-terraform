@@ -6,6 +6,6 @@
 # Terraform directories
 .terraform/
 .terraform.lock.hcl
-
+*.tfstate*
 # Override files that are local only
 *.tfvars
